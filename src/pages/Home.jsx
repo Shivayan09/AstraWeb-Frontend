@@ -1,12 +1,15 @@
 import landing_pic from '../assets/Astraweb-landing-pic.jpeg'
 import landing_pic2 from '../assets/homepage-seen-computer-screen.jpg'
 import { ArrowBigRight, ArrowRight, Check, Code2, Github, GraduationCap, IdCard, Layers, Linkedin, Mail, MailIcon, Palette, Quote, Star, Target, TrendingUp, Twitter, User, User2, User2Icon, UserSquare2, Zap } from 'lucide-react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 import business_template_pic from '../assets/business-template.jpeg'
 import portfolio_template_pic from '../assets/portfolio-template.jpg'
-import useIsMobile from './useIsMobile'
+import useIsMobile from '../components/useIsMobile'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+
+    const navigate = useNavigate();
 
     const isMobile = useIsMobile();
 
@@ -29,7 +32,7 @@ const Home = () => {
                         </p>
                         <div className="buttons flex gap-5">
                             <button className='flex items-center gap-3 bg-black text-white/90 font-semibold text-[0.9rem] py-1.5 px-3.5 rounded-md transition-all duration-300 hover:shadow-xl cursor-pointer'>Get Started <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
-                            <button className='bg-white text-black/80 border border-black/20 px-3.5 rounded-md text-[0.9rem] font-semibold transition-all duration-300 hover:bg-gray-100 cursor-pointer'>View Examples</button>
+                            <button className='bg-white text-black/80 border border-black/20 px-3.5 rounded-md text-[0.9rem] font-semibold transition-all duration-300 hover:bg-gray-100 cursor-pointer' onClick={() => navigate('/examples')}>View Examples</button>
                         </div>
                     </div>
                     <div className="boxes h-full w-[100%] md:w-[60%] px-5 md:px-20 flex items-center justify-center">
