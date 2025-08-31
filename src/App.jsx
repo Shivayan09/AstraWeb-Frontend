@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import BusinessEg from './pages/BusinessEg.jsx'
 import PortfolioEg from './pages/PortfolioEg.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
+import Templates from './pages/Templates.jsx'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/businessEg' element={<BusinessEg/>}/>
         <Route path='/portfolioEg' element={<PortfolioEg/>}/>
+        <Route path='/templates' element={<Templates/>}/>
       </Routes>
     </>
   )
