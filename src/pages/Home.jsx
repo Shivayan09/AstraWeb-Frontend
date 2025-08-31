@@ -295,7 +295,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div id='contact' className="box bg-black mt-10 pt-10">
+                <div id='contact' className="box bg-zinc-900 mt-10 pt-10">
                     <p className='text-center font-bold text-[1.65rem] text-white'>Ready to Build Your Digital Presence?</p>
                     <p className='text-center text-gray-300 px-3 md:px-70 my-3'>Join thousands of businesses and students who trust AstraWeb to create their professional websites. Start building today</p>
                     <div className="input flex items-center justify-center gap-5 mt-10 mb-5">
