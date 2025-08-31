@@ -31,8 +31,8 @@ const Home = () => {
                             Professional, modern, and conversion-focused designs made simple.
                         </p>
                         <div className="buttons flex gap-5">
-                            <button className='flex items-center gap-3 bg-black text-white/90 font-semibold text-[0.9rem] py-1.5 px-3.5 rounded-md transition-all duration-300 hover:shadow-xl cursor-pointer'>Get Started <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
-                            <button className='bg-white text-black/80 border border-black/20 px-3.5 rounded-md text-[0.9rem] font-semibold transition-all duration-300 hover:bg-gray-100 cursor-pointer'>View Examples</button>
+                            <button className='flex items-center gap-3 bg-black text-white/90 font-semibold text-[0.9rem] py-1.5 px-3.5 rounded-md transition-all duration-300 hover:shadow-xl cursor-pointer' onClick={() => navigate('/templates')}>Get Started <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
+                            <button className='bg-white text-black/80 border border-black/20 px-3.5 rounded-md text-[0.9rem] font-semibold transition-all duration-300 hover:bg-gray-100 cursor-pointer' onClick={() => navigate('/templates')}>View Examples</button>
                         </div>
                     </div>
                     <div className="boxes h-full w-[100%] md:w-[60%] px-5 md:px-20 flex items-center justify-center">
@@ -99,7 +99,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <button className='bg-black -mt-5 cursor-pointer text-white font-semibold text-[0.8rem] mx-auto py-1.5 px-2 flex items-center gap-2 rounded-md' onClick={() => navigate('/businessEg')}>Explore Business Templates <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
+                    <button className='bg-black -mt-5 cursor-pointer text-white font-semibold text-[0.8rem] mx-auto py-1.5 px-2 flex items-center gap-2 rounded-md' onClick={() => navigate('/templates')}>Explore Business Templates <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
                 </div>
 
                 <div id='portfolio' className="box mt-15 md:mt-25">
@@ -159,7 +159,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <button className='bg-white border border-black/10 cursor-pointer text-black font-semibold text-[0.8rem] mx-auto py-1.5 px-2 flex items-center gap-2 rounded-md' onClick={() => navigate('/portfolioEg')}>Explore Portfolio Templates <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
+                    <button className='bg-white border border-black/10 cursor-pointer text-black font-semibold text-[0.8rem] mx-auto py-1.5 px-2 flex items-center gap-2 rounded-md' onClick={() => navigate('/templates')}>Explore Portfolio Templates <ArrowRight className='h-4 w-4 opacity-90'></ArrowRight> </button>
                 </div>
 
                 <div id='pricing' className="box mt-20">
