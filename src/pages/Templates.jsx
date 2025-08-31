@@ -44,7 +44,7 @@ const Templates = () => {
 
             <div className="filter flex flex-col md:flex-row gap-3 justify-between px-5 md:px-20 my-5">
                 <div className="box">
-                    <ul className="flex bg-gray-100 rounded-lg py-1 gap-10 font-semibold text-[0.8rem]">
+                    <ul className="flex bg-gray-100 rounded-lg py-1 items-center justify-between md:gap-10 px-3 font-semibold text-[0.8rem]">
                         {filters.map((item) => (
                             <li
                                 key={item}
