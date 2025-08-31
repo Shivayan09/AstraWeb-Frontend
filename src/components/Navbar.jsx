@@ -43,7 +43,6 @@ const Navbar = () => {
             >
               Contact
             </li>
-
           </ul>
         </div>
         :
@@ -52,11 +51,36 @@ const Navbar = () => {
           {isDropdown &&
             <div className='bg-gray-100/90 w-40 absolute -right-2 -top-4 -z-10 h-screen flex flex-col justify-between'>
               <ul className='flex flex-col gap-7 mt-10 justify-center items-center text-[0.9rem] font-semibold'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Our Work</li>
-                <li>Pricing</li>
-                <li>Contact</li>
+                <li
+                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                  onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Home
+                </li>
+                <li
+                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                  onClick={() => document.getElementById('business')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Business
+                </li>
+                <li
+                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                  onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Portfolio
+                </li>
+                <li
+                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                  onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Pricing
+                </li>
+                <li
+                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Contact
+                </li>
               </ul>
               <ul className='flex flex-col gap-5 justify-center items-center text-[0.9rem] text-gray-600 font-semibold mb-3'>
                 <li>Account</li>
