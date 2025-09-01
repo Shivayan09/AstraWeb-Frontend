@@ -57,26 +57,22 @@ const Navbar = () => {
                 >
                   Home
                 </li>
-                <li
-                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                <li className='cursor-pointer transition-all duration-300 hover:text-black'
                   onClick={() => document.getElementById('business')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Business
                 </li>
-                <li
-                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                <li className='cursor-pointer transition-all duration-300 hover:text-black'
                   onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Portfolio
                 </li>
-                <li
-                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                <li className='cursor-pointer transition-all duration-300 hover:text-black'
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Pricing
                 </li>
-                <li
-                  className='cursor-pointer transition-all duration-300 hover:text-black'
+                <li className='cursor-pointer transition-all duration-300 hover:text-black'
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Contact
